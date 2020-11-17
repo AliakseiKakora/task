@@ -1,4 +1,4 @@
-package com.mysolution.task.entities;
+package com.mysolution.task.model.entities;
 
 public enum Liquid {
     PETROL(740),

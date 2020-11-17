@@ -1,4 +1,4 @@
-package com.mysolution.task.entities.bases;
+package com.mysolution.task.model.entities.bases;
 
 public abstract class Base {
     private float square;

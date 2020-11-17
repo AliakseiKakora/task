@@ -1,4 +1,4 @@
-package com.mysolution.task.entities.bases;
+package com.mysolution.task.model.entities.bases;
 
 public class RectangularBase extends Base implements StraightContainerBase {
     private float lengthLargeSide;

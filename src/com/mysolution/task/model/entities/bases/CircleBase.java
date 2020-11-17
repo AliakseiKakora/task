@@ -1,4 +1,4 @@
-package com.mysolution.task.entities.bases;
+package com.mysolution.task.model.entities.bases;
 
 public class CircleBase extends Base implements InclinedContainerBase, StraightContainerBase {
     private float radius;

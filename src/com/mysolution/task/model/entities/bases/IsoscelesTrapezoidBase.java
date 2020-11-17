@@ -1,4 +1,4 @@
-package com.mysolution.task.entities.bases;
+package com.mysolution.task.model.entities.bases;
 
 public class IsoscelesTrapezoidBase extends Base implements InclinedContainerBase, StraightContainerBase {
     private float lengthLargerBase;

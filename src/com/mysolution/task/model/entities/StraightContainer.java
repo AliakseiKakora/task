@@ -1,6 +1,6 @@
-package com.mysolution.task.entities;
+package com.mysolution.task.model.entities;
 
-import com.mysolution.task.entities.bases.StraightContainerBase;
+import com.mysolution.task.model.entities.bases.StraightContainerBase;
 
 public class StraightContainer extends Container {
     private StraightContainerBase base;
@@ -12,6 +12,6 @@ public class StraightContainer extends Container {
 
     @Override
     float calculateVolume() {
-        return 0;
+        return base.getSquare() * getHeight();
     }
 }
