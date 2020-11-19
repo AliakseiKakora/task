@@ -4,6 +4,7 @@ public class SquareBase extends Base implements InclinedContainerBase, StraightC
     private float sideLength;
 
     public SquareBase(float sideLength) {
+        super("Square");
         this.sideLength = sideLength;
     }
 

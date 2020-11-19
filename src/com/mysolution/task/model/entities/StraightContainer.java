@@ -6,7 +6,7 @@ public class StraightContainer extends Container {
     private StraightContainerBase base;
 
     public StraightContainer(float height, StraightContainerBase base) {
-        super(height);
+        super("Straight-" + base.getName() ,height);
         this.base = base;
     }
 

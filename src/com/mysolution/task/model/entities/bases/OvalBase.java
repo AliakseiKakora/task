@@ -5,6 +5,7 @@ public class OvalBase extends Base implements StraightContainerBase {
     private float lengthLittleAxis;
 
     public OvalBase(float lengthLargeAxis, float lengthLittleAxis) {
+        super("Oval");
         this.lengthLargeAxis = lengthLargeAxis;
         this.lengthLittleAxis = lengthLittleAxis;
     }

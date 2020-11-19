@@ -4,6 +4,7 @@ public class RegularHexagonBase extends Base implements InclinedContainerBase, S
     private float sideLength;
 
     public RegularHexagonBase(float sideLength) {
+        super("Hexagon");
         this.sideLength = sideLength;
     }
 

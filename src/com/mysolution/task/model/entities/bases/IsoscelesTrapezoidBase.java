@@ -6,6 +6,7 @@ public class IsoscelesTrapezoidBase extends Base implements InclinedContainerBas
     private float height;
 
     public IsoscelesTrapezoidBase(float lengthLargerBase, float lengthLittleBase, float height) {
+        super("Trapezoid");
         this.lengthLargerBase = lengthLargerBase;
         this.lengthLittleBase = lengthLittleBase;
         this.height = height;

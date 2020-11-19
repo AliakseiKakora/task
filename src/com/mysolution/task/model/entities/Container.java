@@ -3,10 +3,12 @@ package com.mysolution.task.model.entities;
 public abstract class Container {
     private float volume;
     private Liquid liquid;
-    private float height;
+    private final float height;
     private float mass;
+    private final String type;
 
-    public Container(float height) {
+    public Container(String type, float height) {
+        this.type = type;
         this.height = height;
     }
 
@@ -38,7 +40,8 @@ public abstract class Container {
         if (liquid == null) {
             return 0;
         }
-        return  (float) (getVolume() * 0.95 * liquid.getDensity());
+        float maximumVolume = (float) 0.95;
+        return  (getVolume() * maximumVolume * liquid.getDensity());
     }
 
     public void fillContainer(Liquid liquid) {
@@ -47,11 +50,12 @@ public abstract class Container {
 
     @Override
     public String toString() {
-        return "Container{" +
-                "volume=" + volume +
+        return String.format("Container{" +
+                ", volume=" + "%.2f" +
+                ", height=" + "%.2f" +
+                ", mass=" + "%.2f" +
                 ", liquid=" + liquid +
-                ", height=" + height +
-                ", mass=" + mass +
-                '}';
+                ", type=" + type +
+                '}', volume, height, mass);
     }
 }

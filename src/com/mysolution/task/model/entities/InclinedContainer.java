@@ -7,7 +7,7 @@ public class InclinedContainer<T extends InclinedContainerBase> extends Containe
     private T littleBase;
 
     public InclinedContainer(float height, T largeBase, T littleBase) {
-        super(height);
+        super("Inclined-" + largeBase.getName(), height);
         this.largeBase = largeBase;
         this.littleBase = littleBase;
     }

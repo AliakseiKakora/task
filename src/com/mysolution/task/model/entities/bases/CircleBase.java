@@ -4,6 +4,7 @@ public class CircleBase extends Base implements InclinedContainerBase, StraightC
     private float radius;
 
     public CircleBase(float radius) {
+        super("Circle");
         this.radius = radius;
     }
 
