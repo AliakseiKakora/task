@@ -41,7 +41,7 @@ public abstract class Container {
             return 0;
         }
         float maximumVolume = (float) 0.95;
-        return  (getVolume() * maximumVolume * liquid.getDensity());
+        return  getVolume() * maximumVolume * liquid.getDensity();
     }
 
     public void fillContainer(Liquid liquid) {
