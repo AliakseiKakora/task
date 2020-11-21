@@ -1,10 +1,11 @@
 package com.mysolution.task.model.entities.bases;
 
 public class SquareBase extends Base implements InclinedContainerBase, StraightContainerBase {
+    private static final String NAME = "Square";
     private float sideLength;
 
     public SquareBase(float sideLength) {
-        super("Square");
+        super(NAME);
         this.sideLength = sideLength;
     }
 

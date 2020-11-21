@@ -1,10 +1,11 @@
 package com.mysolution.task.model.entities.bases;
 
 public class RegularHexagonBase extends Base implements InclinedContainerBase, StraightContainerBase {
+    private static final String NAME = "Hexagon";
     private float sideLength;
 
     public RegularHexagonBase(float sideLength) {
-        super("Hexagon");
+        super(NAME);
         this.sideLength = sideLength;
     }
 
